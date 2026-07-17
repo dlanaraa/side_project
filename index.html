@@ -86,6 +86,12 @@
         opacity: 0.85;
       }
 
+      .storeCard .storeTel {
+  font-size: 0.9em;
+  opacity: 0.7;
+  letter-spacing: 0.02em;
+}
+
       /* ===== Web ===== */
       .webView {
         display: block;
@@ -350,126 +356,24 @@
         var mobileDots = document.getElementById("mobileDots");
 
         var stores = [
-          {
-            name: "청주 산남법원점",
-            lat: 36.6124311,
-            lng: 127.4701135,
-            address: "충북 청주시 서원구 원흥로80번길 23-4 1층",
-          },
-          {
-            name: "전남 고흥점",
-            lat: 34.525728,
-            lng: 127.1411069,
-            address: "전라남도 고흥군 도양읍 우주항공로 20",
-          },
-          {
-            name: "청주 신봉점",
-            lat: 36.6556109,
-            lng: 127.4694101,
-            address: "충청북도 청주시 흥덕구 신봉동 163",
-          },
-          {
-            name: "서울 화곡점",
-            lat: 37.5419405,
-            lng: 126.8384832,
-            address: "서울 강서구 강서로33길 24 해피빌딩 101호",
-          },
-          {
-            name: "김천 부곡점",
-            lat: 36.1242452,
-            lng: 128.0919405,
-            address: "경상북도 김천시 부곡동 1395",
-          },
-          {
-            name: "충북 대소점",
-            lat: 36.9745252,
-            lng: 127.4724223,
-            address: "충청북도 음성군 대소면 대물1길 6-4 1층",
-          },
-          {
-            name: "충북 보령점",
-            lat: 36.3497212,
-            lng: 126.6071103,
-            address: "충남 보령시 큰오랏3길 51 1층",
-          },
-          {
-            name: "청주 사천점",
-            lat: 36.6641885,
-            lng: 127.4753176,
-            address: "충북 청주시 청원구 율봉로 43",
-          },
-          {
-            name: "충북 증평점",
-            lat: 36.7760033,
-            lng: 127.5674438,
-            address: "충북 증평군 증평읍 초중6길 1",
-          },
-          {
-            name: "충북 보은점",
-            lat: 36.4858862,
-            lng: 127.720873,
-            address: "충북 보은군 남부로 4515",
-          },
-          {
-            name: "세종 보람점",
-            lat: 36.4840179,
-            lng: 127.2938563,
-            address: "세종 시청대로 219 시드니하트 502호",
-          },
-          {
-            name: "순천 삼산점 <strong>(샵인샵)</strong>",
-            lat: 34.9712942,
-            lng: 127.4853152,
-            address: "전남 순천시 삼산로 17 순천문화예술회관 맟은편",
-          },
-          {
-            name: "순천 신대점 <strong>(샵인샵)</strong>",
-            lat: 34.9327676,
-            lng: 127.5549493,
-            address: "전남 순천시 해룡면 매안로 69",
-          },
-          {
-            name: "순천 풍덕점 <strong>(샵인샵)</strong>",
-            lat: 34.9404077,
-            lng: 127.50544,
-            address: "전남 순천시 하풍동길 34 1층",
-          },
-          {
-            name: "경북 상주점 <strong>(샵인샵)</strong>",
-            lat: 36.4058737,
-            lng: 128.1604241,
-            address: "경북 상주시 상산로 169",
-          },
-          {
-            name: "인천 옥련점",
-            lat: 37.4278038,
-            lng: 126.6493483,
-            address: "인천 연수구 독배로90번길 70-4 1층",
-          },
-          {
-            name: "충북 분평점 <strong>(샵인샵)</strong>",
-            lat: 36.606025,
-            lng: 127.4862864,
-            address: "충청북도 청주시 서원구 1순환로 1078 1층",
-          },
-          {
-            name: "경기 동두천점",
-            lat: 37.9061045,
-            lng: 127.0648011,
-            address: "경기도 동두천시 장고갯로 126 1층",
-          },
-          {
-            name: "충북 용암점",
-            lat: 36.6028118,
-            lng: 127.5144135,
-            address: "충북 청주시 상당구 월운로 70 1층",
-          },
-          {
-            name: "전주 만성점",
-            lat: 35.8415961,
-            lng: 127.0790317,
-            address: "전북 전주시 덕진구 만성동로 64-3 1층",
-          },
+          { name: "청주 산남법원점", lat: 36.6124311, lng: 127.4701135, tel: "043-291-0204", address: "충북 청주시 서원구 원흥로80번길 23-4 1층" },
+          { name: "청주 용암점", lat: 36.6028118, lng: 127.5144135, tel: "043-288-9885", address: "충북 청주시 상당구 월운로 70 1층" },
+          { name: "청주 신봉점", lat: 36.6556109, lng: 127.4694101, tel: "043-266-8883", address: "충북 청주시 흥덕구 사운로 323(신봉동)" },
+          { name: "청주 사천점", lat: 36.6641885, lng: 127.4753176, tel: "043-218-8885", address: "충북 청주시 청원구 율봉로 43" },
+          { name: "충북 증평점", lat: 36.7760033, lng: 127.5674438, tel: "043-838-8398", address: "충북 증평군 증평읍 초중6길 1" },
+          { name: "대전 문지점", lat: 36.39548987421799, lng: 127.40709629589479, tel: "042-867-7759", address: "대전 유성구 문지로 322 1층" },
+          { name: "세종 보람점", lat: 36.4840179, lng: 127.2938563, tel: "044-866-7599", address: "세종 시청대로 219 시드니하트 502호" },
+          { name: "경북 부곡점", lat: 36.1242452, lng: 128.0919405, tel: "054-436-2111", address: "경북 김천시 부곡맛고을5길 1" },
+          { name: "순천 신대점", lat: 34.9327676, lng: 127.5549493, tel: "061-723-9825", address: "전남 순천시 해룡면 매안로 69" },
+          { name: "순천 풍덕점", lat: 34.9404077, lng: 127.50544, tel: "061-741-9825", address: "전남 순천시 하풍동길 34 1층" },
+          { name: "순천 석현점", lat: 34.9712942, lng: 127.4853152, tel: "061-753-9825", address: "전남 순천시 삼산로 17 순천문화예술회관 맞은편" },
+          { name: "인천 옥련점", lat: 37.4278038, lng: 126.6493483, tel: "032-859-7770", address: "인천광역시 연수구 독배로90번길 70-4 1층" },
+          { name: "충남 보령점", lat: 36.3497212, lng: 126.6071103, tel: "041-931-0608", address: "충남 보령시 큰오랏3길 51 1층" },
+          { name: "전남 녹동점", lat: 34.525728, lng: 127.1411069, tel: "061-842-9292", address: "전남 고흥군 도양읍 우주항공로 20" },
+          { name: "전남 고흥점", lat: 34.60787132244292, lng: 127.2811822347238, tel: "061-832-7777", address: "전남 고흥군 고흥읍 터미널길 29 1층" },
+          { name: "충북 보은점", lat: 36.4858862, lng: 127.720873, tel: "043-543-0998", address: "충북 보은군 보은읍 남부로 4515" },
+          { name: "경북 상주점", lat: 36.4058737, lng: 128.1604241, tel: "054-535-1717", address: "경북 상주시 신봉동 172-16" },
+          { name: "서울 화곡점", lat: 37.5419405, lng: 126.8384832, tel: "02-2603-9916", address: "서울 강서구 화곡동 1050-36 해피하우스1층" },
         ];
 
         var currentPage = 1;
@@ -521,7 +425,8 @@
           slice.forEach(function (store, index) {
             var item = document.createElement("div");
             item.className = "storeCard";
-            item.innerHTML = `<h2>${store.name}</h2><p>${store.address}</p>`;
+            item.innerHTML = `<h2>${store.name}</h2><p>${store.address}</p>` +
+  (store.tel ? `<p class="storeTel">${store.tel}</p>` : "");
             item.onclick = function () {
               moveToMarker(start + index);
             };
@@ -560,7 +465,8 @@
 
               var item = document.createElement("div");
               item.className = "storeCard";
-              item.innerHTML = `<h2>${store.name}</h2><p>${store.address}</p>`;
+              item.innerHTML = `<h2>${store.name}</h2><p>${store.address}</p>` +
+  (store.tel ? `<p class="storeTel">${store.tel}</p>` : "");
               item.onclick = function () {
                 moveToMarker(globalIdx);
               };
